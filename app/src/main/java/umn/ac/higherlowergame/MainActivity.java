@@ -12,6 +12,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
     int randomNumber;
 
+
     public void guess(View view){
         EditText guessEditText = (EditText) findViewById(R.id.editTextNumber);
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             randomNumber = rand.nextInt(20)+1;
         }
 
-        Toast.makeText(MainActivity.this, guessEditText.getText().toString(), Toast.LENGTH_SHORT).show();
+//        Toast.makeText(MainActivity.this, guessEditText.getText().toString(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -40,5 +41,6 @@ public class MainActivity extends AppCompatActivity {
         Random rand = new Random();
 
         randomNumber = rand.nextInt(20) + 1;
+
     }
 }
